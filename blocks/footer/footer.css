@@ -1,6 +1,6 @@
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  background-color: #161616;
+    padding: 2rem 1rem;
 }
 
 footer .footer > div {
@@ -10,11 +10,79 @@ footer .footer > div {
 }
 
 footer .footer p {
-  margin: 0;
+  font-weight: bold;    /* Bold text */
+    margin: 0 0 0.5rem 0; /* Optional: spacing between paragraphs */
+    font-weight: 400;
+    font-size: 16px;
+
 }
 
 @media (width >= 900px) {
   footer .footer > div {
     padding: 40px 32px 24px;
   }
+}
+
+
+
+/* Columns block padding */
+.footerset .columns.block.columns-4-cols {
+  border-bottom: 1px solid white;
+}
+
+.footerset .columns.block.columns-4-cols > div > div:nth-of-type(2) {
+  padding-top: 0;
+  padding-bottom: 110px;
+}
+
+.footerset .columns.block.columns-4-cols > div > div:nth-of-type(4) {
+  padding-bottom: 100px;
+}
+
+
+
+/* Style for links */
+.section.footerset a {
+  text-decoration: none;
+  background-image: none !important;   /* Prevent background icons */
+  padding-right: 0 !important;         /* Remove space for icon if added */
+  position: relative;
+}
+
+/* Remove any pseudo-element icons (commonly used for external links) */
+.section.footerset a::after,
+.section.footerset a::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* Optional: Hover effect */
+.section.footerset a:hover {
+  text-decoration: underline;
+  color: #cccccc;
+}
+.section.footerset .columns-img-col {
+  margin-top: -500px; /* Adjust this value as needed */
+  margin-left: -4rem;
+}
+/* For all <p> tags inside the 4-column block */
+.columns-4-cols p {
+      /* White text */
+  font-weight: bold;    /* Bold text */
+  margin: 0 0 0.5rem 0; /* Optional: spacing between paragraphs */
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* For all <a> (link) tags inside the 4-column block */
+.columns-4-cols a {
+  color: #cccccc;        /* Light grey links */
+  font-weight: normal;   /* Optional: remove bold if inherited */
+  text-decoration: none; /* Optional: remove underline */
+  font-weight: 200;     /* Light font weight */
+    font-size: 14px;
+
+}
+.columns-4-cols li::marker {
+  color: #161616;
 }

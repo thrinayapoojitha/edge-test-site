@@ -1,0 +1,52 @@
+<svg fill="blue" slot="media" class="accelerating-transformation pictogram-color-gradient-180-blue-to-purple cds--pictogram-item__pictogram" data-autoid="c4d--pictogram-item__pictogram" focusable="false" viewBox="0 0 80 80" height="80" width="80" role="img">
+    <use href="#accelerating-transformation" height="80" width="80"></use>
+    <defs>
+        <linearGradient id="pictogram-color-gradient-180-blue-to-purple" gradientTransform="rotate(90)">
+            <stop offset="0%" stop-color="#0f62fe"></stop>
+            <stop offset="100%" stop-color="#8a3ffc"></stop>
+        </linearGradient>
+        <linearGradient id="pictogram-color-gradient-180-blue-dark-to-light" gradientTransform="rotate(90)">
+            <stop offset="0%" stop-color="#0f62fe"></stop>
+            <stop offset="100%" stop-color="#78a9ff"></stop>
+        </linearGradient>
+        <linearGradient id="pictogram-color-gradient-180-blue-to-teal" gradientTransform="rotate(90)">
+            <stop offset="0%" stop-color="#0f62fe"></stop>
+            <stop offset="100%" stop-color="#08bdba"></stop>
+        </linearGradient>
+        <linearGradient id="pictogram-color-gradient-180-blue-to-magenta" gradientTransform="rotate(90)">
+            <stop offset="0%" stop-color="#0f62fe"></stop>
+            <stop offset="100%" stop-color="#ff7eb6"></stop>
+        </linearGradient>
+        <linearGradient id="pictogram-color-gradient-180-red-to-purple" gradientTransform="rotate(90)">
+            <stop offset="0%" stop-color="#fa4d56"></stop>
+            <stop offset="100%" stop-color="#a56eff"></stop>
+        </linearGradient>
+        <linearGradient id="pictogram-color-blue-80">
+            <stop stop-color="#002d9c"></stop>
+        </linearGradient>
+        <linearGradient id="pictogram-color-blue-80">
+            <stop stop-color="#002d9c"></stop>
+        </linearGradient>
+        <linearGradient id="pictogram-color-blue-60">
+            <stop stop-color="#0f62fe"></stop>
+        </linearGradient>
+        <linearGradient id="pictogram-color-cyan-50">
+            <stop stop-color="#1192E8"></stop>
+        </linearGradient>
+        <linearGradient id="pictogram-color-purple-60">
+            <stop stop-color="#8A3FFC"></stop>
+        </linearGradient>
+        <linearGradient id="pictogram-color-green-50">
+            <stop stop-color="#24a148"></stop>
+        </linearGradient>
+        <linearGradient id="pictogram-color-teal-50">
+            <stop stop-color="#009d9a"></stop>
+        </linearGradient>
+        <linearGradient id="pictogram-color-magenta-50">
+            <stop stop-color="#EE5396"></stop>
+        </linearGradient>
+        <linearGradient id="pictogram-color-red-60">
+            <stop stop-color="#DA1E28"></stop>
+        </linearGradient>
+    </defs>
+</svg>

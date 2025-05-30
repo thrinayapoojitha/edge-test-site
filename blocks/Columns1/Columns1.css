@@ -1,0 +1,54 @@
+.columns1-container .columns1-wrapper{
+background-color:#f4f4f4;
+}
+
+
+.content-item .columns1-wrapper {
+  background-color: #f4f4f4;
+  padding: 40px;
+}
+
+
+.columns-2-cols > div > div:nth-child(2) {
+  padding-inline-start: 64px;
+   max-width: 50%;/* adjust value as needed */
+}
+
+.content-item .columns1-wrapper picture {
+  flex: 1;
+  max-width: 100%;
+
+}
+
+.content-item .columns1-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.content-item .columns1-wrapper h3 {
+   font-size: 32px;
+   font-weight: 300;
+   line-height: 40px;
+   padding-bottom: 1rem;
+   margin-top: 0;
+   max-width: 80%;
+}
+.content-item .columns1-wrapper p {
+    max-width: 80%;
+    color: var(--cds-text-primary, #161616);
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-block-end: 1.5rem;
+    }
+
+.content-item .columns1-wrapper ul{
+  list-style: none; /* Remove default bullet */
+  padding-left: 0;  /* Optional: remove default padding */
+ li::before {
+
+  color: inherit;    /* Use the same color as the text */
+}
+
+}

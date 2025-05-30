@@ -1,0 +1,111 @@
+.test-container{
+.default-content-wrapper{
+   margin-block-end:2rem;
+}
+}
+
+/* Container holding the cards */
+.test-wrapper ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Each card */
+.test-wrapper ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 25%; /* 4 cards per row with no gap */
+  border: 1px solid #ddd;
+  border-radius: 0; /* Optional: remove border radius to make them flush */
+  padding: 15px;
+  box-sizing: border-box;
+  position: relative;
+  background: #fff;
+  transition: background-color 0.3s ease; /* Smooth transition */
+  cursor: pointer;
+}
+
+/* Hover effect */
+.test-wrapper ul li:hover {
+  background-color: #f0f0f0; /* Light grey on hover */
+}
+
+/* Target the image block */
+.test-wrapper ul li picture {
+  display: block;
+  margin-right: 15px;
+  max-width: 100px;
+}
+
+/* Text container (heading + description) */
+.test-wrapper ul li .cards-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  .button-container{
+     display:none;
+  }
+}
+
+.test-wrapper ul li .cards-card-body p{
+  margin: 0;
+  &:first-of-type{
+      font-size: var(--cds-label-01-font-size, .75rem);
+      font-weight: var(--cds-label-01-font-weight, 400);
+      line-height: var(--cds-label-01-line-height, 1.33333);
+      letter-spacing: var(--cds-label-01-letter-spacing, .32px);
+      color: var(--cds-text-secondary, #525252);
+      margin-block-end: 0.5rem;
+  }
+  &:nth-of-type(2){
+  margin-block-end:2rem;
+  }
+  &:last-of-type{
+       margin-top: auto; /* Pushes it to the bottom */
+       /* Aligns it to the right */
+     }
+      /* Optional: Add some spacing */
+     img {
+       display: block;
+     }
+  }
+}
+
+/* Make sure image appears on the left */
+.test-wrapper ul li .cards-card-body:first-of-type picture {
+  order: -1;
+}
+
+/* Link icon in bottom right */
+.test-wrapper ul li::after {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 18px;
+  color: #007acc;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .test-wrapper ul li {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .test-wrapper ul li {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .test-wrapper ul li picture {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

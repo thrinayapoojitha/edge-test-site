@@ -1,0 +1,145 @@
+.carousel .carousel-slides,
+
+
+.carousel-slides {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+padding-inline-start: 0px;
+  scroll-behavior: smooth;
+  max-width: calc((300px * 4) + (10px * 3)) !important;
+}
+
+
+.carousel .carousel-slides::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel .carousel-slide {
+  flex: 0 0 auto;
+  width: 300px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 0; /* Rectangular */
+  overflow: hidden;
+  border: none;
+}
+
+.carousel .carousel-slide:has(.carousel-slide-content[data-align='center']) {
+  align-items: center;
+}
+
+.carousel .carousel-slide:has(.carousel-slide-content[data-align='right']) {
+  align-items: flex-end;
+}
+
+.carousel .carousel-slide .carousel-slide-image picture > video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+
+.carousel .carousel-slide .carousel-slide-image picture,
+.carousel .carousel-slide .carousel-slide-image picture > img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 0; /* Rectangular image */
+}
+
+.carousel .carousel-slide .carousel-slide-content {
+  padding: 12px;
+  width: 100%;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+
+
+.carousel .carousel-slide-indicator button:disabled,
+.carousel .carousel-slide-indicator button:hover,
+.carousel .carousel-slide-indicator button:focus-visible {
+  background-color: var(--text-color);
+}
+
+@media (width >= 600px) {
+  .carousel .carousel-slide .carousel-slide-content {
+    --slide-content-width: calc((100% - 184px) / 2);
+  }
+
+  .carousel .carousel-slide .carousel-slide-content[data-align='justify'] {
+    --slide-content-width: auto;
+  }
+  .carousel-slide-indicators,
+  .carousel-slide-indicators *,
+  nav[aria-label="Carousel Slide Controls"] {
+    display: none !important;
+  }
+  .carousel-slides-container {
+    display: flex;
+    flex-direction: column; /* Stack slides and buttons vertically */
+  }
+
+  .carousel-navigation-buttons {
+    align-items: center;
+    display: grid;
+    font-size: var(--cds-body-02-font-size, 1rem);
+    font-weight: var(--cds-body-02-font-weight, 400);
+    gap: 1rem;
+    grid-template-columns: auto auto auto;
+    justify-content: flex-end;
+    letter-spacing: var(--cds-body-02-letter-spacing, 0);
+    line-height: var(--cds-body-02-line-height, 1.5);
+    order: 1;
+    margin-block-start: 1rem;
+  }
+
+  /* Style the buttons inside */
+  .carousel-navigation-buttons button {
+    block-size: 3rem;
+    inline-size: 3rem;
+    min-block-size: 3rem;
+    padding: 0;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 0; /* Make it rectangular (no rounded corners) */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Hover effect */
+  .carousel-navigation-buttons button:hover {
+    background-color: #0072c3; /* IBM blue */
+    border-color: #0072c3;
+  }
+
+
+  .carousel-slides {
+    order: 0; /* Ensure it's before the buttons */
+  }
+
+}
+.section.cardscarousel h2{
+      font-size: calc(-.61765rem + 4.41176vw);
+        line-height: 1.17;
+        font-weight: 300;
+
+  }
+  .section.cardscarousel h4 {
+    color: var(--cds-text-primary, #161616);
+    font-size: 20px;
+    font-weight: 400;
+  }
